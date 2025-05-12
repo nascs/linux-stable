@@ -22,7 +22,7 @@ jobs:
           echo "revision=${VERSION#*-}" >> $GITHUB_ENV
           echo "tag_name=${VERSION}" >> $GITHUB_ENV
       - name: Build
-        uses: radxa-repo/bsp@main
+        uses: nascs/bsp@add_dht11_to_stable
         with:
           target: linux
           edition: stable
